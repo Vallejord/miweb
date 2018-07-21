@@ -20,7 +20,7 @@
 
   </header>
 
-  <nav>
+  <nav id="navbar">
     <ul>
       <li><a href="#intro">Introduccion</a></li>
       <li><a href="#arreglos">Arreglos</a></li>
@@ -131,5 +131,23 @@
       </ul>
     </footer>
 
+    <script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
 </body>
 </html>
+
+<!-- buscar un javascrip para scrolear lento-->
+
