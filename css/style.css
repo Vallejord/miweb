@@ -105,6 +105,10 @@ li > a {
 	color: white;
 }
 
+a:hover {
+	color: grey;
+}
+
 a {
 	text-decoration: none;
     color: black;
